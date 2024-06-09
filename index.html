@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple page with an attractive navbar and logo">
+    <title>F3 Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: black;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 15px 30px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .logo span {
+            font-size: 24px;
+            font-weight: bold;
+            color: goldenrod;
+            padding-left: 20px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .navbar a.active {
+            background-color: goldenrod;
+            color: white;
+        }
+        .navbar a {
+            cursor: pointer;
+        }
+        .one {
+            opacity: 0.5;
+        }
+
+        /* Poppins font classes */
+        .poppins-thin { font-family: "Poppins", sans-serif; font-weight: 100; }
+        .poppins-extralight { font-family: "Poppins", sans-serif; font-weight: 200; }
+        .poppins-light { font-family: "Poppins", sans-serif; font-weight: 300; }
+        .poppins-regular { font-family: "Poppins", sans-serif; font-weight: 400; }
+        .poppins-medium { font-family: "Poppins", sans-serif; font-weight: 500; }
+        .poppins-semibold { font-family: "Poppins", sans-serif; font-weight: 600; }
+        .poppins-bold { font-family: "Poppins", sans-serif; font-weight: 700; }
+        .poppins-extrabold { font-family: "Poppins", sans-serif; font-weight: 800; }
+        .poppins-black { font-family: "Poppins", sans-serif; font-weight: 900; }
+        .poppins-thin-italic { font-family: "Poppins", sans-serif; font-weight: 100; font-style: italic; }
+        .poppins-extralight-italic { font-family: "Poppins", sans-serif; font-weight: 200; font-style: italic; }
+        .poppins-light-italic { font-family: "Poppins", sans-serif; font-weight: 300; font-style: italic; }
+        .poppins-regular-italic { font-family: "Poppins", sans-serif; font-weight: 400; font-style: italic; }
+        .poppins-medium-italic { font-family: "Poppins", sans-serif; font-weight: 500; font-style: italic; }
+        .poppins-semibold-italic { font-family: "Poppins", sans-serif; font-weight: 600; font-style: italic; }
+        .poppins-bold-italic { font-family: "Poppins", sans-serif; font-weight: 700; font-style: italic; }
+        .poppins-extrabold-italic { font-family: "Poppins", sans-serif; font-weight: 800; font-style: italic; }
+        .poppins-black-italic { font-family: "Poppins", sans-serif; font-weight: 900; font-style: italic; }
+
+        body {
+            margin: 20px;
+            padding: 5px;
+        }
+        .title {
+            background-color: white;
+            display: block;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+        }
+        .container div {
+            width: 220px;
+            color: black;
+            margin: 10px;
+            flex-basis: 30%;
+        }
+        .about {
+            display: block;
+            text-align: center;
+            border-width: 2px; 
+            border-color: antiquewhite; 
+            border-style: solid; 
+            padding: 5px;
+        }
+        .aboutus {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .aboutus p {
+            flex: 1 1 300px;
+            margin: 20px;
+        }
+        .aboutus img {
+            max-width: 40%;
+            height: 400px;
+            flex: 1 1 100px;
+        }
+        .contact {
+            width: 100%;
+            height: 140px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .bg {
+            background-image: url('bgimg.jpg');
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.5);
+            background-blend-mode: darken;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .gallery {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="C:\Users\Madhavan\Desktop\CSS project\KK service\img1.jpg" alt="Services Logo">
+            <span>F3 Services</span>
+        </div>
+        <div>
+            <a class="active" href="#home">Home</a></li>
+            <a href="#services">Services</a></li>
+            <a href="#about">About Us</a></li>
+            <a href="#gallery">Gallery</a></li>
+            <a href="#contact">Contact</a></li>
+        </div>
+    </div>
+
+    <div id="home" style="padding:20px;">
+        <h1 style="text-align: center;"><i class="fa-solid fa-map-location"></i>Rajapalayam    Best Home Appliances Services!    call: +91 7010581507</h1>
+    </div>
+
+    <div class="bg">
+        <h1 style="margin: 10px; color: rgb(192, 167, 102);padding: 10px; font-size: 60px;">WELCOME TO OUR F3 SERVICES</h1>
+        <h2 style="margin: 10px; color: white; padding: 10px; font-size: 50px;">A HIGHLY EXPERTISE</h2>
+        <h1 style="margin: 10px; color: goldenrod; padding: 10px; font-size: 70px;">FRIDGE || WASHING MACHINE || AC SERVICES</h1>
+        <h2 style="margin: 10px; color: white; padding: 10px; font-size: 50px;">WE ARE HAPPY THAT YOU CHOOSE US</h2>
+        <p>Our mission is to ensure your home appliances operate at their best, providing you with convenience, comfort, and peace of mind. Our team of highly skilled and certified technicians is committed to excellence, equipped with the latest tools and knowledge to handle any issue with precision and care.</p>
+    </div>
+
+    <div id="services" class="title">
+        <h1 style="text-align: center;border-width: 2px; border-color: antiquewhite; border-style: solid; padding: 5px;">Services</h1>
+    </div>
+
+    <div class="container">
+        <div>
+            <img src="C:\Users\Madhavan\Desktop\CSS project\KK service\fridge.webp" width="220px" height="220px">
+            <h2>Fridge</h2>
+            <p>Our fridge service is dedicated to providing reliable and efficient repairs that ensure your appliance operates smoothly, keeping your food fresh and safe. We pride ourselves on prompt and professional service.</p>
+        </div>
+        <div>
+            <img src="C:\Users\Madhavan\Desktop\CSS project\KK service\wahine machine.jpg" width="220px" height="220px">
+            <h2>Washing Machine</h2>
+            <p>Our washing machine service is committed to delivering comprehensive repair solutions for all brands and models, ensuring your appliance runs smoothly and efficiently. We provide fast and reliable service to get you back on track quickly.</p>
+        </div>
+        <div>
+            <img src="C:\Users\Madhavan\Desktop\CSS project\KK service\Ac service.jpg" width="220px" height="220px">
+            <h2>AC</h2>
+            <p>Our comprehensive AC maintenance service ensures your home remains cool and comfortable, optimizing the performance and energy efficiency of your air conditioning system. We identify potential issues early, preventing costly repairs and prolonging the life of your AC.</p>
+        </div>
+    </div>
+
+    <h1 id="about" class="about">About Us</h1>
+    <div class="aboutus">
+        <p><b>WELCOME TO OUR</b><br><br> KK Service, your trusted partner for top-quality fridge, washing machine, and air conditioning services. With years of experience in the industry, we are dedicated to delivering exceptional service and unmatched expertise to meet all your appliance maintenance and repair needs.<br><br>Customer satisfaction is at the heart of everything we do. We strive to exceed your expectations with transparent pricing, timely service, and a customer-focused approach. Whether it's a quick repair or comprehensive maintenance, we guarantee exceptional results and a positive experience every time.<br><br>Choose <b>KK Service</b> for the best in fridge, washing machine, and AC services. Experience the difference of working with a team that values your trust and is dedicated to keeping your home appliances running smoothly.</p>
+        <img src="C:\Users\Madhavan\Desktop\CSS project\KK service\karupasamy bro.png" height="200px">
+    </div>
+
+    <div id="gallery" class="gallery">
+        <h1 style="text-align: center; border-width: 2px; border-color: antiquewhite; border-style: solid; padding: 5px;">Gallery</h1>
+        <div style="background-color: slategray;"  class="container">
+            <div>
+                <img src="C:\Users\Madhavan\Downloads\service img1.jpeg" width="250px" height="250px">
+            </div>
+            <div>
+                <img src="C:\Users\Madhavan\Downloads\service img2.jpeg" width="250px" height="250px">
+            </div>
+            <div>
+                <img src="C:\Users\Madhavan\Desktop\CSS project\KK service\Ac service.jpg" width="250px" height="250px">
+            </div>
+            <div>
+                <img src="C:\Users\Madhavan\Downloads\service img3.jpeg" width="300px" height="220px">
+            </div>
+            <div>
+                <img src="C:\Users\Madhavan\Downloads\service img1.jpeg" width="300px" height="220px">
+            </div>
+            <div>
+                <img src="C:\Users\Madhavan\Downloads\service img2.jpeg" width="300px" height="220px">
+            </div>
+            <div>
+                <img src="C:\Users\Madhavan\Downloads\service img3.jpeg" width="220px" height="220px">
+            </div>
+            <div>
+                <img src="C:\Users\Madhavan\Downloads\service img2.jpeg" width="220px" height="220px">
+            </div>
+            <div>
+                <img src="C:\Users\Madhavan\Desktop\CSS project\KK service\Ac service.jpg" width="220px" height="220px">
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>KARUPASAMY ||  7010581507 || abc@gmail.com </p>
+        <p>74, Tiruvanandapuram Street, Rajapalayam, Virudhunagar District, Tamilnadu. Your satisfaction is our priority. For the best in fridge, washing machine, and AC services, reach out to us today. We look forward to assisting you!</p>
+    </div>
+
+    <script>
+        // Smooth scrolling for navbar links
+        document.querySelectorAll('.navbar a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
